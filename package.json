@@ -4,8 +4,17 @@
   "description": "Word Teacher",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "start": "node index.js",
+    "test": "mocha",
+    "test-e2e": "mocha 'e2e/*.test.js'"
   },
   "author": "Vaidas Pilkauskas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
 }
