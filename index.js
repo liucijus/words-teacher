@@ -2,8 +2,7 @@ const app = require('express')()
 
 const PORT = parseInt(process.argv[2])
 
-app.get('/hello', (req, res) => res.send('hello'))
-app.get('/words', (req, res) => res.json({words: []}))
+app.use('/', require('./lib/words'))
 
 const server = require('http').createServer(app)
 
